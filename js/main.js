@@ -4,10 +4,10 @@ let ind = false
 
 function toggleNav() {
 	if (!ind) {
-		nav.style.left = '0'
+		nav.style.top = '100%'
 		ind = !ind
 	} else {
-		nav.style.left = '100%'
+		nav.style.top = '-1000px'
 		ind = !ind
 	}
 }
@@ -15,7 +15,7 @@ function toggleNav() {
 navBtn.addEventListener('click', toggleNav)
 window.addEventListener('click', e => {
 	if (e.target != navBtn) {
-		nav.style.left = '100%'
+		nav.style.top = '-1000px'
 		ind = false
 	}
 })
