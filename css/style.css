@@ -850,3 +850,206 @@ section .top p {
 	margin: 0 auto;
 	background-color: var(--sky);
 }
+
+#subscribe {
+	background-image: url('../images/subscribe.jpg');
+	background-size: cover;
+	position: relative;
+}
+
+#subscribe::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--overlay);
+}
+
+#subscribe .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+#subscribe .input-box {
+	max-width: 400px;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid white;
+	position: relative;
+}
+
+#subscribe .input-box i {
+	color: white;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 15px;
+}
+
+#subscribe .input-box input {
+	padding: 20px 0 20px 50px;
+	flex: 1;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: white;
+	position: relative;
+}
+
+#subscribe .input-box input::placeholder {
+	color: white;
+}
+
+#subscribe .input-box button {
+	background-color: var(--sky);
+	color: white;
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+#subscribe h3 {
+	color: white;
+	position: relative;
+	font-weight: normal;
+	line-height: 2rem;
+}
+
+@media (max-width: 767px) {
+	#subscribe .container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#subscribe .input-box button {
+		padding: 10px;
+	}
+}
+
+#contact .bottom {
+	display: flex;
+	gap: 50px;
+}
+
+#contact .bottom form {
+	display: flex;
+	flex-direction: column;
+	flex: 3;
+	gap: 20px;
+	align-items: flex-end;
+}
+
+#contact .bottom form input,
+#contact .bottom form textarea {
+	background-color: transparent;
+	border: 1px solid #a2a2a2;
+	outline: none;
+	padding: 30px;
+	width: 100%;
+}
+
+#contact .bottom form input::placeholder,
+#contact .bottom form textarea::placeholder {
+	text-transform: uppercase;
+}
+
+#contact .bottom form textarea {
+	height: 200px;
+}
+
+#contact .bottom form button {
+	background-color: var(--sky);
+	display: block;
+	width: fit-content;
+	padding: 20px;
+	font-size: 1.1rem;
+	color: white;
+	text-transform: uppercase;
+}
+
+#contact .bottom .content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+
+#contact .bottom .content h3 {
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+#contact .bottom .content div > :not(h3) {
+	color: var(--secondary-color);
+}
+
+#contact .bottom .content .contact-infos {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#contact .bottom .content .address {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+@media (max-width: 767px) {
+	#contact .bottom {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#contact .bottom .content {
+		order: -1;
+	}
+}
+
+footer {
+	background-image: url('../images/subscribe.jpg');
+	background-size: cover;
+	position: relative;
+	padding: 50px 0;
+}
+
+footer .container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	gap: 30px;
+}
+
+footer h3 {
+	font-weight: normal;
+	border-bottom: 1px solid white;
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+footer ul {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+
+footer p span {
+	color: var(--sky);
+	font-weight: bold;
+}
+
+footer::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--overlay);
+}
